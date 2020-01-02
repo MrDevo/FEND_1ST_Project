@@ -1,3 +1,7 @@
+@import "/css/footer.css";
+@import "/css/article.css";
+@import "/css/nav.css";
+
 :root {
   --light-color: #f9fcfd;
   --red-color: #e75238;
@@ -95,51 +99,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Navigation */
-
-#blog-title {
-  color: #333;
-  border-bottom: solid var(--light-color) 1px;
-}
-#main-nav {
-  position: sticky;
-  top: 0;
-  z-index: 2;
-}
-#main-nav .container {
-  display: grid;
-  grid-template-columns: 6fr 3fr 2fr;
-  align-items: center;
-  padding: 1rem;
-  background: var(--grey-color);
-}
-#main-nav .social {
-  justify-self: center;
-}
-
-#main-nav .social i {
-  color: #777;
-  margin-right: 0.5rem;
-}
-
-#main-nav ul {
-  justify-self: end;
-  display: flex;
-}
-#main-nav ul li a.current {
-  background: var(--light-color);
-}
-#main-nav ul li a:hover {
-  background: var(--red-color);
-  color: #333;
-  opacity: 1;
-}
-#main-nav ul li a {
-  padding: 0.75rem;
-  font-weight: bold;
-  color: var(--green-color);
-}
-
 /* Home Articles */
 #home-articles h2 {
   margin-top: 5px;
@@ -168,77 +127,8 @@ h2 {
 .card {
   background: var(--grey-color);
   padding: 1rem;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.card:hover{
-    opacity: 0.9;
+.card:hover {
+  opacity: 0.9;
 }
-
-
-/* Article */
-
-#article .meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #eee;
-  padding: 0.5rem;
-}
-
-#article .meta .technology {
-  margin-top: 0.4rem;
-}
-.page-container {
-  display: grid;
-  grid-template-columns: 5fr 2fr;
-  margin: 2rem 0;
-  grid-gap: 1.5rem;
-}
-
-.page-container > *:first-child {
-  grid-row: 1 / span 3;
-}
-#article .card{
-    opacity: 1;
-}
-#categories ul li a {
-    color: var(--light-color);
-}
-#categories ul li a:hover{
-    color: var(--pink-color);
-}
-
-/* Footer */
-
-#main-footer {
-  background: #333;
-  color: var(--light-color);
-}
-#main-footer a {
-  color: var(--light-color);
-}
-#main-footer .footer-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1.5rem;
-  margin-top: 10px;
-}
-#main-footer .footer-container > *:last-child {
-  background: #444;
-  grid-column: 1 / span 4;
-  padding: 0.5rem;
-  text-align: center;
-  font-size: 0.75rem;
-}
-#main-footer .footer-container input[type="email"] {
-  width: 90%;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-#main-footer .footer-container input[type="submit"] {
-  width: 90%;
-}
-.list li {
-  padding: .5rem 0;
-  border-bottom: #555 dotted 1px;
-  width: 90%;
