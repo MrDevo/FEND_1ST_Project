@@ -168,6 +168,44 @@ h2 {
 .card {
   background: var(--grey-color);
   padding: 1rem;
+  transition: all .2s ease-in-out;
+}
+.card:hover{
+    opacity: 0.9;
+}
+
+
+/* Article */
+
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .technology {
+  margin-top: 0.4rem;
+}
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+#article .card{
+    opacity: 1;
+}
+#categories ul li a {
+    color: var(--light-color);
+}
+#categories ul li a:hover{
+    color: var(--pink-color);
 }
 
 /* Footer */
