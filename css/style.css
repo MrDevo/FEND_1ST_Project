@@ -40,6 +40,10 @@ h2 {
   line-height: 1.3;
   font-size: 2em;
 }
+figcaption{
+  font-size: 0.75em;
+  font-style: italic;
+}
 .container {
   /* max-width: var(--max-width); */
   margin: auto;

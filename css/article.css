@@ -29,3 +29,6 @@
 #categories ul li a:hover {
   color: var(--pink-color);
 }
+q {
+  font-style: italic;
+}
