@@ -1,15 +1,27 @@
 /* Article */
 #article .meta {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
   background: #eee;
   padding: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #article .meta .technology {
   margin-top: 0.4rem;
 }
+
+.bio {
+  line-height: 1.2em;
+}
+
+.author-picture img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
 .page-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
@@ -20,15 +32,19 @@
 .page-container > *:first-child {
   grid-row: 1 / span 3;
 }
+
 #article .card {
   opacity: 1;
 }
+
 #categories ul li a {
   color: var(--light-color);
 }
+
 #categories ul li a:hover {
   color: var(--pink-color);
 }
+
 q {
   font-style: italic;
 }

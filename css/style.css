@@ -10,29 +10,36 @@
   --grey-color: #8aa4ab;
   --max-width: 1100px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   /* border: solid red 1px; */
 }
+
 body {
   line-height: 1.5;
   background: var(--light-color);
   font-family: "Lato", sans-serif;
 }
+
 img {
   width: 100%;
 }
+
 a {
   text-decoration: none;
 }
+
 p {
   margin: 0.5rem 0;
 }
+
 ul {
   list-style: none;
 }
+
 h1,
 h2 {
   font-family: "Staatliches", cursive;
@@ -40,16 +47,21 @@ h2 {
   line-height: 1.3;
   font-size: 2em;
 }
-figcaption{
+h3 {
+  font-size: 1.5em;
+}
+figcaption {
   font-size: 0.75em;
   font-style: italic;
 }
+
 .container {
   /* max-width: var(--max-width); */
   margin: auto;
   padding: 0 2rem;
   overflow: hidden;
 }
+
 .technology {
   display: inline-block;
   color: #333;
@@ -69,15 +81,18 @@ figcaption{
   color: #fff;
   padding: 0.5rem 1.5rem;
 }
+
 .btn:hover {
   opacity: 0.9;
 }
+
 #showcase {
   color: #fff;
   background: #333;
   padding: 2rem;
   position: relative;
 }
+
 #showcase:before {
   content: "";
   background: url(/img/showcase.jpeg) no-repeat center center/cover;
@@ -88,6 +103,7 @@ figcaption{
   height: 100%;
   opacity: 0.4;
 }
+
 #showcase .showcase-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -99,6 +115,7 @@ figcaption{
 #showcase .showcase-content {
   z-index: 1;
 }
+
 #showcase .showcase-content p {
   margin-bottom: 1rem;
 }
@@ -109,14 +126,17 @@ figcaption{
   margin-bottom: 5px;
   text-transform: uppercase;
 }
+
 #home-articles .articles-container a {
   color: var(--light-color);
 }
+
 #home-articles .articles-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
 }
+
 #home-articles .articles-container > *:first-child,
 #home-articles .articles-container > *:last-child {
   display: grid;
@@ -125,14 +145,17 @@ figcaption{
   align-items: center;
   grid-column: 1 / span 2;
 }
+
 #home-articles .articles-container > *:last-child {
   grid-column: 2 / span 2;
 }
+
 .card {
   background: var(--grey-color);
   padding: 1rem;
   transition: all 0.2s ease-in-out;
 }
+
 .card:hover {
   opacity: 0.9;
 }

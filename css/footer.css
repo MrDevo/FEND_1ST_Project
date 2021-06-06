@@ -2,15 +2,18 @@
   background: #333;
   color: var(--light-color);
 }
+
 #main-footer a {
   color: var(--light-color);
 }
+
 #main-footer .footer-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1.5rem;
   margin-top: 10px;
 }
+
 #main-footer .footer-container > *:last-child {
   background: #444;
   grid-column: 1 / span 4;
@@ -18,14 +21,17 @@
   text-align: center;
   font-size: 0.75rem;
 }
+
 #main-footer .footer-container input[type="email"] {
   width: 90%;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
 }
+
 #main-footer .footer-container input[type="submit"] {
   width: 90%;
 }
+
 .list li {
   padding: 0.5rem 0;
   border-bottom: #555 dotted 1px;

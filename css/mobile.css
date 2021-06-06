@@ -1,17 +1,21 @@
 #main-nav .social {
   display: none;
 }
+
 #main-nav .container {
   grid-template-columns: 1fr;
   grid-gap: 1.2rem;
 }
+
 #main-nav ul,
 #main-nav a {
   justify-self: center;
 }
+
 #main-nav ul li a {
   padding: 0.5rem;
 }
+
 #home-articles .articles-container {
   grid-template-columns: repeat(2, 1fr);
 }
@@ -20,6 +24,10 @@
 #home-articles .articles-container > *:last-child {
   grid-template-columns: 1fr;
   grid-column: 1;
+}
+
+#article .meta .author-picture {
+  padding-right: 10px;
 }
 
 @media (max-width: 600px) {
@@ -51,5 +59,8 @@
 
   .l-heading {
     font-size: 2rem;
+  }
+  #article .meta {
+    flex-direction: column;
   }
 }
